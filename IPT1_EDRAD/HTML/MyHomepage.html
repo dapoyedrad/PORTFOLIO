@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../CSS/MyHomepage.css">
+  <style>
+    #header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/MyPortfolioBackground.png);
+    background-size: cover;
+    }
+    @media only screen and (max-width: 600px){
+  #header{
+    background-image: url(C:\Users\laila\Desktop\IPT1_EDRAD\images\DapoyPhoneBackground.png);
+    background-size: cover;
+    }
+}
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="../images/logo2.png" alt="" width="200px">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Student from City of Malabon University</p>
+        <h1>Hi, I'm <span>Don Perfecto II D. Edrad</span><br> from Malabon City</h1>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="../images/DapoyProfile.png" alt="" width="400px">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi I'm Don Perfecto II D. Edrad. I am already 24 y/o turning 25 y/o on January 23, 2025. I live in Malabon City specifically at Brgy. Longos. I am currently taking an undergraduate degree of Bachelor of Science in Information Technology</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX Designer</span><br>Designing Web/ App Interfaces</li>
+              <li><span>Web Development</span><br>Website Development</li>
+              <li><span>App Development</span><br>Building Android/IOS apps</li>
+            </ul>
+          </div><div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023</span><br>Building a Rock, Paper, Scissor Game</li>
+              <li><span>2023</span><br>I made a game titled Minecraft Gold Miner</li>
+              <li><span>2024</span><br>Learning Management System</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2006 - 2011</span><br>Ninoy Aquino Elementary School</li>
+              <li><span>2012 - 2014 (Junior High School)</span><br>Longos National High School</li>
+              <li><span>2014 - 2016 (Junior High School)</span><br>Polo National High School</li>
+              <li><span>2018 - 2019 (Senior High School)</span><br>City of Malabon University</li>
+              <li><span>2022 - Present (Undergraduate)</span><br>City of Malabon University</li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!---SERVICES-->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni exercitationem quae odit consequatur beatae animi neque! Quis facere magnam, accusamus voluptatum tempore mollitia amet. Sit rem cum id quae!</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni exercitationem quae odit consequatur beatae animi neque! Quis facere magnam, accusamus voluptatum tempore mollitia amet. Sit rem cum id quae!</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni exercitationem quae odit consequatur beatae animi neque! Quis facere magnam, accusamus voluptatum tempore mollitia amet. Sit rem cum id quae!</p>
+            <a href="#">Learn More</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!---PORTFOLIO-->
+  <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="../images/work-1.png" alt="" width="600px">
+            <div class="layer">
+              <h3>Minecraft Gold Miner</h3>
+              <p>Play Now! I assure you that this game is fun and will make you entertain.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="../images/work-2.png" alt="" width="600px">
+            <div class="layer">
+              <h3>Rock, Paper, Scissor</h3>
+              <p>Rock, Paper, Scissors. Challenge, Choose, Conquer! Play the game, test your fate!.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="../images/work-3.png" alt="" width="600px">
+            <div class="layer">
+              <h3>Learning Management System</h3>
+              <p>Empower Learning, Elevate Minds. Your Path to Smarter Education Starts Here.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+  </div>
+
+  <!---CONTACT-->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>09771020320</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <!--I SHOULD HAVE PDF FILE HERE-->
+          <a href="#" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" id="" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &#169;. Made By Dapoy Edrad</p>
+    </div>
+  </div>
+  <script>
+
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    let sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+</body>
+</html>
